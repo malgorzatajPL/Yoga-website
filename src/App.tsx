@@ -1,5 +1,5 @@
 import React from 'react';
-import Menu from './Components/Menu/Menu';
+import Menu from './Components/Header/Menu';
 
 function App() {
   return <Menu />;
