@@ -17,7 +17,7 @@ const AppStyle = styled.div`
     background-repeat: no-repeat;
     z-index: 1;
     right: -506px;
-    top: 44%;
+    top: 26%;
   }
 `;
 

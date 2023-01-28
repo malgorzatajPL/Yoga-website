@@ -24,5 +24,6 @@ export const OurStatsStyle = styled.section`
 
 export const CardsCircle = styled.div`
   display: flex;
+  justify-content: space-around;
   padding: 200px 50px 50px 50px;
 `;
