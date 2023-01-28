@@ -11,7 +11,6 @@ export const ItemStyle = styled.span`
   z-index: 2;
   position: relative;
   font-weight: 700;
-
   :hover {
     color: ${theme.palette.primary[600]};
   }

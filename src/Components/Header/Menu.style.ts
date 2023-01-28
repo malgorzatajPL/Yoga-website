@@ -6,6 +6,7 @@ export const MenuStyle = styled.div`
   position: relative;
   justify-content: space-between;
   padding: 0 30px;
+  overflow: hidden;
   :before {
     content: '';
     position: absolute;
