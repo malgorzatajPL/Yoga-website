@@ -6,18 +6,16 @@ export const ChooseClassSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 100px;
 `;
-export const HeaderChooseClass = styled.div`
-  padding: 60px;
-  text-align: center;
-`;
+
 export const SubtitleChooseClass = styled.p`
   font-family: ${theme.fontFamily.main};
   color: ${theme.palette.primary[100]};
+  font-size: ${fontSize(30)};
   font-variant-caps: normal;
   line-height: 1.8;
   z-index: 5;
-  font-size: ${fontSize(30)};
   width: 70%;
   margin: 0 auto;
 `;

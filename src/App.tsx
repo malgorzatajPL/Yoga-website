@@ -3,6 +3,7 @@ import Menu from './Components/Header/Menu';
 import Main from './Components/Main/Main';
 import ChooseClass from './Components/ChooseClass/ChooseClass';
 import styled from 'styled-components';
+import OurStats from './Components/OurStats/OurStats';
 
 const AppStyle = styled.div`
   position: relative;
@@ -26,6 +27,7 @@ function App() {
       <Menu />
       <Main />
       <ChooseClass />
+      <OurStats />
     </AppStyle>
   );
 }

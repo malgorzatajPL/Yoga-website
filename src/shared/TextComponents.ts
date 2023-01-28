@@ -21,3 +21,16 @@ export const Body = styled.p<{ primary?: boolean }>`
   font-family: ${theme.fontFamily.main};
   font-variant-caps: normal;
 `;
+
+export const Subtitle = styled.p<{ primary?: boolean }>`
+  font-size: ${fontSize(30)};
+  line-height: 1.8;
+  z-index: 5;
+  width: 70%;
+  margin: 0 auto;
+  color: ${(props) =>
+    props.primary ? theme.palette.primary[500] : theme.palette.primary[100]};
+  font-weight: 400;
+  font-family: ${theme.fontFamily.main};
+  font-variant-caps: normal;
+`;

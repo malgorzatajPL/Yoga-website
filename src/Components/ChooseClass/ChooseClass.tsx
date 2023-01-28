@@ -1,23 +1,19 @@
 import React from 'react';
-import {
-  Cards,
-  ChooseClassSection,
-  HeaderChooseClass,
-  SubtitleChooseClass,
-} from './ChooseClass.style';
+import { Cards, ChooseClassSection } from './ChooseClass.style';
 import Card from './Card';
-import { Header1 } from '../../shared/TextComponents';
+import { Header1, Subtitle } from '../../shared/TextComponents';
+import { Header } from '../../shared/HeadersBox';
 
 const ChooseClass = () => {
   return (
     <ChooseClassSection>
-      <HeaderChooseClass>
+      <Header>
         <Header1>Choose class</Header1>
-        <SubtitleChooseClass>
+        <Subtitle>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
           lacinia odio vitae vestibulum vestibulum.
-        </SubtitleChooseClass>
-      </HeaderChooseClass>
+        </Subtitle>
+      </Header>
       <Cards>
         <Card
           imageSrc='/Card1.png'
