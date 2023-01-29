@@ -22,12 +22,17 @@ export const Body = styled.p<{ primary?: boolean }>`
   font-variant-caps: normal;
 `;
 
-export const Subtitle = styled.p<{ primary?: boolean }>`
+export const Subtitle = styled.p<{
+  primary?: boolean;
+  margin?: boolean;
+  padding?: string;
+}>`
   font-size: ${fontSize(30)};
   line-height: 1.8;
   z-index: 5;
   width: 70%;
-  margin: 0 auto;
+  padding: ${(props) => (props.padding ? props.padding : '0')};
+  margin: ${(props) => (props.margin ? '0 auto' : '0')};
   color: ${(props) =>
     props.primary ? theme.palette.primary[500] : theme.palette.primary[100]};
   font-weight: 400;

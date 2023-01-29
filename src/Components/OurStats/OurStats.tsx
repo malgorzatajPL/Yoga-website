@@ -9,7 +9,7 @@ const OurStats = () => {
     <OurStatsStyle>
       <Header>
         <Header1 primary={true}>Our stats</Header1>
-        <Subtitle primary={true}>
+        <Subtitle primary={true} margin={true}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
           lacinia odio vitae vestibulum vestibulum.
         </Subtitle>

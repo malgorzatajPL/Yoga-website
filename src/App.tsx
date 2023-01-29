@@ -4,6 +4,7 @@ import Main from './Components/Main/Main';
 import ChooseClass from './Components/ChooseClass/ChooseClass';
 import styled from 'styled-components';
 import OurStats from './Components/OurStats/OurStats';
+import BestInstruction from './Components/BestInstruction/BestInstruction';
 
 const AppStyle = styled.div`
   position: relative;
@@ -28,6 +29,7 @@ function App() {
       <Main />
       <ChooseClass />
       <OurStats />
+      <BestInstruction />
     </AppStyle>
   );
 }

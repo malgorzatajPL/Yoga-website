@@ -9,7 +9,7 @@ const ChooseClass = () => {
     <ChooseClassSection>
       <Header>
         <Header1>Choose class</Header1>
-        <Subtitle>
+        <Subtitle margin={true}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
           lacinia odio vitae vestibulum vestibulum.
         </Subtitle>
