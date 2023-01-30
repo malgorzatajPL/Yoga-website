@@ -12,6 +12,17 @@ export const Header1 = styled.h1<{ primary?: boolean }>`
   line-height: 1.8;
   z-index: 5;
 `;
+export const Header2 = styled.h1<{ primary?: boolean }>`
+  font-size: ${fontSize(75)};
+  color: ${(props) =>
+    props.primary ? theme.palette.primary[500] : theme.palette.primary[100]};
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: ${theme.fontFamily.main};
+  font-variant-caps: normal;
+  line-height: 1.5;
+  z-index: 5;
+`;
 export const Body = styled.p<{ primary?: boolean }>`
   font-size: ${fontSize(21)};
   line-height: 1.4;
