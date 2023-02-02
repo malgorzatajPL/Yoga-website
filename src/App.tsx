@@ -8,6 +8,7 @@ import BestInstruction from './Components/BestInstruction/BestInstruction';
 import NewExperience from './Components/NewExperience/NewExperience';
 import Pricing from './Components/Pricing/Pricing';
 import { Trainer } from './Components/Trainer/Trainer';
+import { Subscription } from './Components/Subscription/Subscription';
 
 const AppStyle = styled.div`
   position: relative;
@@ -36,6 +37,7 @@ function App() {
       <NewExperience />
       <Pricing />
       <Trainer />
+      <Subscription />
     </AppStyle>
   );
 }

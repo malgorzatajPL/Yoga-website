@@ -11,6 +11,7 @@ export const theme: ThemeTypes = {
       600: '#4F9A94',
     },
     grey: '#444444',
+    white: '#fff',
   },
   fontFamily: {
     main: 'Montserrat , sans-serif',

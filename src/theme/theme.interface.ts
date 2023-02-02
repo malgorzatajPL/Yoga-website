@@ -13,6 +13,7 @@ declare module 'styled-components' {
     palette: {
       primary: IShades;
       grey: string;
+      white: string;
     };
     fontFamily: {
       main: string;
