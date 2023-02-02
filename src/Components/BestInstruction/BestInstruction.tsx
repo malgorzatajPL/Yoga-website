@@ -1,4 +1,4 @@
-import { ButtonRead } from '../../shared/ButtonRead';
+import { ButtonPrimary } from '../../shared/ButtonPrimary';
 import { Header2, Subtitle } from '../../shared/TextComponents';
 import {
   BestInstructionStyle,
@@ -15,7 +15,7 @@ const BestInstruction = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
           lacinia odio vitae vestibulum vestibulum.{' '}
         </Subtitle>
-        <ButtonRead primary={true} />
+        <ButtonPrimary primary={true} textButton='Read more' />
       </Content>
       <ImageInstruction src='/BestInstruction.png' />
     </BestInstructionStyle>

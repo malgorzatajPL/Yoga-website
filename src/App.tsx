@@ -6,6 +6,8 @@ import styled from 'styled-components';
 import OurStats from './Components/OurStats/OurStats';
 import BestInstruction from './Components/BestInstruction/BestInstruction';
 import NewExperience from './Components/NewExperience/NewExperience';
+import Pricing from './Components/Pricing/Pricing';
+import { Trainer } from './Components/Trainer/Trainer';
 
 const AppStyle = styled.div`
   position: relative;
@@ -32,6 +34,8 @@ function App() {
       <OurStats />
       <BestInstruction />
       <NewExperience />
+      <Pricing />
+      <Trainer />
     </AppStyle>
   );
 }

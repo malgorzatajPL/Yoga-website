@@ -1,8 +1,7 @@
-import React from 'react';
-import { ImageExperience, NewExperienceStyle } from './NewExperience.style';
-import { Header1, Header2, Subtitle } from '../../shared/TextComponents';
-import { ButtonRead } from '../../shared/ButtonRead';
+import { ButtonPrimary } from '../../shared/ButtonPrimary';
+import { Header2, Subtitle } from '../../shared/TextComponents';
 import { Content } from '../BestInstruction/BestInstruction.style';
+import { ImageExperience, NewExperienceStyle } from './NewExperience.style';
 
 const NewExperience = () => {
   return (
@@ -14,7 +13,7 @@ const NewExperience = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
           lacinia odio vitae vestibulum vestibulum.{' '}
         </Subtitle>
-        <ButtonRead primary={false} />
+        <ButtonPrimary primary={false} textButton='Read now' />
       </Content>
     </NewExperienceStyle>
   );

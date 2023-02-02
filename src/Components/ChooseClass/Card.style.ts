@@ -30,13 +30,18 @@ export const BoxImage = styled.div`
 export const Image = styled.img`
   border-radius: 50%;
 `;
-export const TitleCard = styled.div`
+export const TitleCard = styled.div<{
+  primary?: boolean;
+  lineHeight?: boolean;
+}>`
   font-size: ${fontSize(37)};
   font-family: ${theme.fontFamily.main};
-  color: ${theme.palette.primary[100]};
+  color: ${(props) =>
+    props.primary ? theme.palette.primary[500] : theme.palette.primary[100]};
+
   font-weight: 900;
   z-index: 5;
-  line-height: 3;
+  line-height: ${(props) => (props.lineHeight ? '1.4' : '3')};
 `;
 export const SubtitleCard = styled.div`
   font-size: ${fontSize(22)};
