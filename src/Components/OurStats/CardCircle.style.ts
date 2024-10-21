@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { fontSize, theme } from '../../theme/theme';
+import styled from "styled-components";
+import { fontSize, theme } from "../../theme/theme";
 
 export const CardCircleStyle = styled.div`
   width: 330px;
@@ -10,6 +10,9 @@ export const CardCircleStyle = styled.div`
   text-align: center;
   display: flex;
   border: 5px solid ${theme.palette.primary[600]};
+  @media (max-width: 900px) {
+    margin: 20px 0;
+  }
 `;
 export const TitleCircleStyle = styled.div`
   font-family: ${theme.fontFamily.main};

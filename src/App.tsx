@@ -24,6 +24,9 @@ const AppStyle = styled.div`
     z-index: 1;
     right: -506px;
     top: 26%;
+    @media (max-width: 1100px) {
+      z-index: -1;
+    }
   }
 `;
 

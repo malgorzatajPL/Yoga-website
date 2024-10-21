@@ -11,7 +11,11 @@ export const Header1 = styled.h1<{ primary?: boolean }>`
   font-variant-caps: normal;
   line-height: 1.8;
   z-index: 5;
-`;
+  @media (max-width: 900px) {
+    font-size: ${fontSize(60)};    
+  }
+  
+  `;
 export const Header2 = styled.h1<{ primary?: boolean }>`
   font-size: ${fontSize(75)};
   color: ${(props) =>
@@ -22,6 +26,9 @@ export const Header2 = styled.h1<{ primary?: boolean }>`
   font-variant-caps: normal;
   line-height: 1.5;
   z-index: 5;
+  @media (max-width: 900px) {
+    font-size: ${fontSize(40)};    
+  }
 `;
 export const Body = styled.p<{ primary?: boolean }>`
   font-size: ${fontSize(21)};
@@ -49,4 +56,8 @@ export const Subtitle = styled.p<{
   font-weight: 400;
   font-family: ${theme.fontFamily.main};
   font-variant-caps: normal;
+  @media (max-width: 900px) {
+    width: 100%;
+    font-size: ${fontSize(20)};
+  }
 `;

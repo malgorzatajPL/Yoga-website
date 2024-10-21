@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { theme } from '../../theme/theme';
 
-export const NavItemStyle = styled.div`
-  padding: 0 25px;
+export const NavItemStyle = styled.div<{ isMobileMenuOpen: boolean }>`
+  padding: ${({ isMobileMenuOpen }) => (isMobileMenuOpen ? "25px" : "0 25px")};
 `;
 export const ItemStyle = styled.span`
   color: ${theme.palette.grey};

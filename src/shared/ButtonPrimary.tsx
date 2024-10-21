@@ -10,6 +10,7 @@ const ButtonPrimaryStyle = styled.button<{ primary?: boolean }>`
   font-weight: 600;
   font-size: ${fontSize(25)};
   text-transform: uppercase;
+  z-index: 1;
   color: ${(props) =>
     props.primary ? theme.palette.primary[500] : theme.palette.primary[100]};
   background-color: ${(props) =>

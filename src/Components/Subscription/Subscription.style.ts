@@ -21,18 +21,24 @@ export const SubscribeInput = styled.input`
   border-radius: 33px;
   background-color: ${theme.palette.white};
   border: none;
+  margin-top: 20px;
   ::placeholder {
     color: ${theme.palette.primary[500]};
     font-family: ${theme.fontFamily.main};
-    font-size: ${fontSize(25)};
+    font-size: ${fontSize(22)};
     opacity: 0.502;
     padding-left: 30px;
   }
-`;
+  @media (max-width: 1000px) {
+    width:300px;
+    font-size: ${fontSize(20)};
+  }
+  `;
 export const SubscribeButton = styled.button`
   position: absolute;
+  margin-top: 20px;
   width: 222px;
-  z-index: 10;
+  z-index: 5;
   right: 0;
   height: 65px;
   border-radius: 33px;
@@ -40,5 +46,11 @@ export const SubscribeButton = styled.button`
   font-size: ${fontSize(25)};
   background-color: ${theme.palette.primary[200]};
   color: ${theme.palette.primary[600]};
+  
   border: none;
-`;
+  @media (max-width: 1000px) {
+    width:120px;
+    font-size: ${fontSize(20)};
+    right: 120px;
+  }
+  `;

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { fontSize, theme } from '../../theme/theme';
+import styled from "styled-components";
+import { fontSize, theme } from "../../theme/theme";
 
 export const FooterStyle = styled.footer`
   display: grid;
@@ -8,6 +8,10 @@ export const FooterStyle = styled.footer`
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   padding: 80px 40px;
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 export const BoxImages = styled.div`
   display: flex;
@@ -16,9 +20,15 @@ export const BoxImages = styled.div`
   padding-top: 20px;
 `;
 export const BoxFooter = styled.div`
+    @media (max-width: 1000px) {
+      padding: 20px 0;
+    }
   :nth-child(1) {
     grid-area: 1 / 1 / 2 / 3;
     padding: 0 40px;
+    @media (max-width: 1000px) {
+      padding: 0;
+    }
   }
   :nth-child(2) {
     grid-area: 1 / 3 / 2 / 4;

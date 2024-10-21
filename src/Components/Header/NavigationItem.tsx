@@ -3,12 +3,13 @@ import { ItemStyle, NavItemStyle } from './NavigationItem.style';
 
 interface ItemProps {
   itemName: string;
+  isMobileMenuOpen: boolean
 }
 
 const NavigationItem = (props: ItemProps) => {
-  const { itemName } = props;
+  const { itemName, isMobileMenuOpen } = props;
   return (
-    <NavItemStyle>
+    <NavItemStyle isMobileMenuOpen={isMobileMenuOpen}>
       <ItemStyle>{itemName}</ItemStyle>
     </NavItemStyle>
   );

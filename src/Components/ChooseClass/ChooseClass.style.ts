@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { fontSize, theme } from '../../theme/theme';
+import styled from "styled-components";
+import { fontSize, theme } from "../../theme/theme";
 
 export const ChooseClassSection = styled.section`
   background-color: ${theme.palette.primary[600]};
@@ -18,9 +18,13 @@ export const SubtitleChooseClass = styled.p`
   z-index: 5;
   width: 70%;
   margin: 0 auto;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 export const Cards = styled.div`
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
 `;
